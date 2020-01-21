@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Private Homepage of Kilian Mauer, done for the Prechallenge of FEND20 by OpenCampus">
+    <meta name="keywords" content="Web Development, Ruby on Rails, Compuer Sciences, Rigging, Foodsharing, Biking, Boulder">
+
+    <title>Booking Request</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="pictures/icon.png">
+  </head>
+  <body id="booking">
+    <form action="mailto:kilian_mauer@protonmail.com" method="post" enctype="text/plain">
+      <h4>Your information</h4>
+      <div class="row">
+        <div class="column">
+          <label for="name">Company or Name(*): </label>
+        </div>
+        <div class="column">
+          <input type="text" name="Name" value="Enter name of company" id="name">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <label>Phonenumber(*): </label>
+        </div>
+        <div class="column">
+          <input type="tel" name="phonenumber" value="">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <label>Emailadress(*):</label>
+        </div>
+        <div class="column">
+          <input type="email" name="emailadress" value="">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <label>Contact Person</label>
+        </div>
+        <div class="column">
+          <input type="text" name="contact" value="">
+        </div>
+      </div>
+      <hr>
+
+
+      <h4>The Job</h4>
+      <div class="row">
+        <div class="column">
+          <label for="date">Date(*):</label>
+        </div>
+        <div class="column">
+          <input type="date" nae="date" value="Select a date" id="date">
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <label for="duration_value">Approximate Duration(*):</label>
+        </div>
+        <div class="column">
+          <div class="column">
+            <input type="radio" name="duration_unit" checked> Day(s) <br>
+            <input type="radio" name="duration_unit" > hours
+          </div>
+          <input type="number" name="duration_value" value="How long will it approximatly be?" id="duration_value">
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <label for="name">Work to be done (please check applicable and I will bring suited tools)</label>
+        </div>
+        <div class="column">
+          <input type="checkbox" name="height" value="">Climbing <br>
+          <input type="checkbox" name="truss" value="">Assembling/deassembling truss <br>
+          <input type="checkbox" name="layher" value="">Assembling/deassembling Layher <br>
+        </div>
+      </div>
+      <hr>
+
+      <h4>Adress of venue</h4>
+      <div class="row">
+        <div class="column">
+          <label for="name">Name</label>
+        </div>
+        <div class="column">
+          <input type="text" name="name" value="">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <label for="street">Street(*)</label>
+        </div>
+        <div class="column">
+          <input type="text" name="street" value="">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <label for="street_number">Street number(*)</label>
+        </div>
+        <div class="column">
+          <input type="number" name="street_number" value="">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <label for="city">City(*)</label>
+        </div>
+        <div class="column">
+          <input type="text" name="city" value="">
+        </div>
+      </div>
+
+      <h4>Billing Adress</h4>
+
+      <div class="row">
+        <div class="column">
+          <label for="street">Street(*)</label>
+        </div>
+        <div class="column">
+          <input type="text" name="street" value="">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <label for="street_number">Street number(*)</label>
+        </div>
+        <div class="column">
+          <input type="number" name="street_number" value="">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <label for="city">City(*)</label>
+        </div>
+        <div class="column">
+          <input type="text" name="city" value="">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <label for="zipcode">Zipcode(*)</label>
+        </div>
+        <div class="column">
+          <input type="number" name="zipcode" value="">
+        </div>
+      </div>
+
+      <hr>
+      <div class="row">
+        <div class="column">
+          <label for="accept_terms">Accept terms(*):</label>
+        </div>
+        <div class="column">
+          <div class="column">
+            <input type="checkbox" name="duration_unit"> I have read and accept the terms and conditions (<a href="AGBs.pdf">click to download</a>) <br>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <h4>Additional Information</h4>
+      <textarea name="additional_info" rows="8" cols="80"></textarea><br>
+      <input type="submit" name="additional_info">
+    </form>
+  </body>
+</html>
