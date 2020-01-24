@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Private Homepage of Kilian Mauer, done for the Prechallenge of FEND20 by OpenCampus">
+    <meta name="keywords" content="Web Development, Ruby on Rails, Compuer Sciences, Rigging, Foodsharing, Biking, Boulder">
+
+    <title>Booking Request</title>
+    <link rel="stylesheet" href="styles/booking.css">
+    <link rel="shortcut icon" type="image/x-icon" href="pictures/icon.png">
+  </head>
+  <body id="booking">
+
+    <form action="mailto:kilian_mauer@protonmail.com" method="post" enctype="text/plain">
+      <h1>Booking Request</h1>
+      <h4>Your information</h4>
+      <div class="item item-left">
+        <label for="company_name">Company Name(*): </label>
+        <input type="text" name="company_name" placeholder="Enter the name of your company" id="company_name" required>
+      </div>
+      <div class="item item-right">
+        <label for="phone_number">Phone Number(*): </label>
+        <input type="tel" name="phone_number" value="" required>
+      </div>
+      <div class="item item-left">
+        <label>E-mail(*):</label>
+        <input type="email" name="emailadress" value="" required>
+      </div>
+      <div class="item item-right">
+        <label for="contact_person">Contact Person</label>
+        <input type="text" name="contact_person" value="">
+      </div>
+
+
+      <h4>The Job</h4>
+      <div class="item item-whole">
+        <label for="name_production">Name of Production</label>
+        <input type="text" name="name_production" value="">
+      </div>
+        <label class="item-whole">Work to be done (please check applicable and I will bring suited tools)</label>
+          <div class="checkbox" id="checkbox_1">
+            <input type="checkbox" name="height">
+            <label for="height">Climbing</label>
+          </div>
+          <div class="checkbox" id="checkbox_2">
+            <input type="checkbox" name="truss">
+            <label for="truss">Truss</label>
+          </div>
+          <div class="checkbox" id="checkbox_3">
+            <input type="checkbox" name="layher">
+            <label for="layher">Layher</label>
+        </div>
+        <div class="item item_date item_date_left">
+          <label for="start_date">Begin(*):</label>
+          <input type="date" name="start_date" value="Select a start date" id="start_date" required>
+        </div>
+        <div class="item item_time item_time_left">
+          <label for="start_time">Time:</label>
+          <input type="time" name="start_time" value="Select a start time" id="start_time" required>
+        </div>
+        <div id="end_date" class="item item_date item_date_right">
+          <label for="end_date">End:</label>
+          <input type="date" name="end_date" value="Select a end date" id="end_date">
+        </div>
+        <div id="end_time" class="item item_time item_time_right">
+          <label for="end_time">Time:</label>
+          <input type="time" name="end_time" value="Select a end time" id="end_time">
+        </div>
+
+      <h4>Address of Venue</h4>
+      <div class="item item-whole">
+        <label for="name_venue">Name of Venue</label>
+        <input type="text" name="name_venue" value="">
+      </div>
+      <div class="item item_street">
+        <label for="street_venue">Street(*)</label>
+        <input class="street_input" type="text" name="street_venue" value="" required>
+      </div>
+      <div class="item item_street_number">
+        <label for="street_number_venue">Street Number(*)</label>
+        <input class="street_number_input" type="text" name="street_number_venue" value="" required>
+      </div>
+      <div class="item item_zip">
+        <label for="zipcode_venue">Zip Code</label>
+        <input class="zipcode_input" type="number" min="10115" max="99998" step="1" name="zipcode_venue" value="">
+      </div>
+      <div class="item item_city">
+        <label for="city_venue">City(*)</label>
+        <input class="city_input" type="text" name="city_venue" value="" required>
+      </div>
+
+      <h4>Billing Address</h4>
+      <div class="item item_street">
+        <label for="street_billing">Street(*)</label>
+        <input class="street_input" type="text" name="street_billing" value="" required>
+      </div>
+      <div class="item item_street_number">
+        <label for="street_number_billing">Street Number(*)</label>
+        <input class="street_number_input" type="text" name="street_number_billing" value="" required>
+      </div>
+      <div class="item item_zip">
+        <label for="zipcode_billing">Zip Code(*)</label>
+        <input class="city_input" type="number" min="10115" max="99998" step="1" name="zipcode_billing" value="" required>
+      </div>
+      <div class="item item_city">
+        <label for="city_billing">City(*)</label>
+        <input class="zipcode_input" type="text" name="city_billing" value="" required>
+      </div>
+
+      <h4>Additional Information</h4>
+      <div class="free_text">
+        <textarea class="textinput"  name="additional_info" rows="8" cols="80"></textarea><br>
+        <label for="accept_terms">Accept terms(*):</label>
+        <div>
+          <input type="checkbox" name="accept_terms" required>
+          I have read and accept the terms and conditions (<a href="AGBs.pdf">click to download</a>) <br>
+          <input class="button" type="submit" name="additional_info">
+        </div>
+      </div>
+  </form>
+  </body>
+</html>

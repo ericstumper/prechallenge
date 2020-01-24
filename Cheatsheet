@@ -1,0 +1,11 @@
+Float zusammen mit width, am besten in % [1][1][1]
+Floating muss gecleart werden: <div class="clr"></div> unter die Floatings,  .clr{clear: both;} in css  [1][1][2]
+Floating macht background des Eltern Elements kaputt, daher dort ```overflow: auto;```, auch möglich: ```overflow: hidden;``` [1][2][1]
+
+
+[1] Modern HTML & CSS From The Beginning (Including Sass)
+    [1] Video 27 Float & Alignment
+        [1]  9:25
+        [2] 12:30
+    [2] Video 29 Navigtion Menu Styling
+        [1]  7:10
