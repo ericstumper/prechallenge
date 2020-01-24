@@ -5,54 +5,33 @@
     --pink: #FF0099;
     --purple: #9900FF;
     --white: #FFFFFF;
+    --black: #000;
 }
 
 body, html {
   text-align: left;
-  color: var(--purple);
+  color: var(--black);
   background-color: var(--light-grey);
   font-family: "Gayathri", sans-serif;
   margin-left: 5%;
   margin-right: 5%;
 }
 
-p {
-  background-color: var(--darker-grey);
-  color: var(--white);
-  height: 100px;
-  text-align: left;
-  padding-left: 50px;
-  padding-top: 10px;
-}
-
-table {
-  float: center;
+table.outside {
   border-collapse: collapse;
+  padding-bottom: 10px;
 }
 
-td {
+tr.outside {
+  border-bottom: 1px solid var(--darker-grey);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+/* td {
   align: center;
   text-align: center;
-  padding-bottom: 0px;
-}
-
-td:first-child {
-  padding-right: 5px;
-}
-
-td:second-child {
-  padding-left: 5px;
-}
-
-tr {
-  height: 600px;
-}
-
-.card {
-  border-left: 10px solid var(--darker-grey);
-  border-right: 10px solid var(--darker-grey);
-  background-color: var(--darker-grey);
-}
+} */
 
 .footer {
   border-radius: 25px;
@@ -83,47 +62,6 @@ tr {
 
 .fa-lastfm:hover {
   color: red;
-}
-
-.subheader {
-  text-align: left;
-  color: var(--pink);
-  background-color: var(--darker-grey);
-  font-variant: small-caps;  /* Kapitälchen */
-  font-family: "Tradewinds", Times, serif;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  text-align: center;
-  padding: 10px;
-  margin-bottom: 0px;
-}
-
-
-.column {
-  float: left;
-  align-items: center;
-  width: 40%;
-  padding: 5px 20px 5px 20px;
-  margin-bottom: 50px;
-}
-
-.column-3 {
-  float: left;
-  align-items: center;
-  width: 30%;
-}
-
-.row {
-  align-items: center;
-}
-
-.thumbnail_wrapper {
-  border-radius: 50%;
-  width: 750px;
-  height: 675px;
-  background-color: var(--light-grey);
-  padding-top: 125px;
-  text-align: center;
 }
 
 /* Clear floats after the columns */

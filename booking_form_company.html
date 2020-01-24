@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Private Homepage of Kilian Mauer, done for the Prechallenge of FEND20 by OpenCampus">
+    <meta name="keywords" content="Web Development, Ruby on Rails, Compuer Sciences, Rigging, Foodsharing, Biking, Boulder">
+
+    <title>Booking Request (company)</title>
+    <link rel="stylesheet" href="styles/booking.css">
+    <link rel="shortcut icon" type="image/x-icon" href="pictures/icon.png">
+  </head>
+  <body id="booking">
+    <form action="mailto:kilian_mauer@protonmail.com" method="post" enctype="text/plain">
+      <table class="outside">
+        <tr class="outside">
+          <td><h4>Your information</h4></td>
+          <td>
+            <table>
+              <tr>
+                <td><label for="company_name">Company Name(*): </label></td>
+                <td><input type="text" name="company_name" placeholder="Enter name of your company" id="company_name" required></td>
+              </tr>
+              <tr>
+                <td><label for="phone_number">Phonenumber(*): </label></td>
+                <td><input type="tel" name="phone_number" value="" required></td>
+              </tr>
+              <tr>
+                <td><label>Emailadress(*):</label></td>
+                <td><input type="email" name="emailadress" value="" required></td>
+              </tr>
+              <tr>
+                <td><label for="contact_person">Contact Person</label></td>
+                <td><input type="text" name="contact_person" value=""></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr class="outside">
+          <td><h4>The Job</h4></td>
+          <td>
+            <table>
+              <tr>
+                <td><label for="date">Date(*):</label></td>
+                <td><input type="date" name="date" value="Select a date" id="date" required></td>
+              </tr>
+              <tr>
+                <td><label for="duration_value">Approximate Duration(*):</label></td>
+                <td>
+                  <input type="radio" name="duration_unit" checked> Day(s) <br>
+                  <input type="radio" name="duration_unit" > hours
+                </td>
+                <td><input type="number"  min="1" step="1" name="duration_value" value="How long will it approximatly be?" id="duration_value" required></td>
+              </tr>
+              <tr>
+                <td><label for="name">Work to be done (please check applicable and I will bring suited tools)</label></td>
+                <td>
+                  <input type="checkbox" name="height" value="">Climbing <br>
+                  <input type="checkbox" name="truss" value="">Assembling/deassembling truss <br>
+                  <input type="checkbox" name="layher" value="">Assembling/deassembling Layher <br>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr class="outside">
+          <td><h4>Adress of venue</h4></td>
+          <td>
+            <table>
+              <tr>
+                <td><label for="name">Name</label></td>
+                <td><input type="text" name="name" value=""></td>
+              </tr>
+              <tr>
+                <td><label for="street">Street(*)</label></td>
+                <td><input type="text" name="street" value="" required></td>
+              </tr>
+              <tr>
+                <td><label for="street_number">Street number(*)</label></td>
+                <td><input type="number" min="1" step="1" oninput="validity.valid||(value='');" name="street_number" value="" required></td>
+              </tr>
+              <tr>
+                <td><label for="city">City(*)</label></td>
+                <td><input type="text" name="city" value="" required></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr class="outside">
+          <td><h4>Billing Adress</h4></td>
+          <td>
+            <table>
+              <tr>
+                <td><label for="street">Street(*)</label></td>
+                <td><input type="text" name="street" value="" required></td>
+              </tr>
+
+              <tr>
+                <td><label for="street_number">Street number(*)</label></td>
+                <td><input type="number" name="street_number" value="" required></td>
+              </tr>
+
+              <tr>
+                <td><label for="city">City(*)</label></td>
+                <td><input type="text" name="city" value="" required></td>
+              </tr>
+
+              <tr>
+                <td><label for="zipcode">Zipcode(*)</label></td>
+                <td><input type="number" name="zipcode" value="" required></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <table>
+          <tr>
+            <tr>
+            <td><label for="accept_terms">Accept terms(*):</label></td>
+            <td>
+              <input type="checkbox" name="duration_unit" required>
+              I have read and accept the terms and conditions (<a href="AGBs.pdf">click to download</a>) <br>
+            </td>
+          </tr>
+        </table>
+        <h4>Additional Information</h4>
+        <table>
+          <tr>
+            <td><textarea name="additional_info" rows="8" cols="80"></textarea><br></td>
+            <td><input type="submit" name="additional_info"></td>
+          </tr>
+        </table>
+      </table>
+    </form>
+  </body>
+</html>
