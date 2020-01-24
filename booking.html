@@ -7,6 +7,7 @@
     <meta name="keywords" content="Web Development, Ruby on Rails, Compuer Sciences, Rigging, Foodsharing, Biking, Boulder">
 
     <title>Booking Request</title>
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/booking.css">
     <link rel="shortcut icon" type="image/x-icon" href="pictures/icon.png">
   </head>
@@ -15,30 +16,30 @@
     <form action="mailto:kilian_mauer@protonmail.com" method="post" enctype="text/plain">
       <h1>Booking Request</h1>
       <h4>Your information</h4>
-      <div class="item item-left">
+      <div class="item item_left">
         <label for="company_name">Company Name(*): </label>
         <input type="text" name="company_name" placeholder="Enter the name of your company" id="company_name" required>
       </div>
-      <div class="item item-right">
+      <div class="item item_right">
         <label for="phone_number">Phone Number(*): </label>
         <input type="tel" name="phone_number" value="" required>
       </div>
-      <div class="item item-left">
+      <div class="item item_left">
         <label>E-mail(*):</label>
         <input type="email" name="emailadress" value="" required>
       </div>
-      <div class="item item-right">
+      <div class="item item_right">
         <label for="contact_person">Contact Person</label>
         <input type="text" name="contact_person" value="">
       </div>
 
 
       <h4>The Job</h4>
-      <div class="item item-whole">
+      <div class="item item_whole">
         <label for="name_production">Name of Production</label>
         <input type="text" name="name_production" value="">
       </div>
-        <label class="item-whole">Work to be done (please check applicable and I will bring suited tools)</label>
+        <label class="item_whole">Work to be done (please check applicable and I will bring suited tools)</label>
           <div class="checkbox" id="checkbox_1">
             <input type="checkbox" name="height">
             <label for="height">Climbing</label>
@@ -69,7 +70,7 @@
         </div>
 
       <h4>Address of Venue</h4>
-      <div class="item item-whole">
+      <div class="item item_whole">
         <label for="name_venue">Name of Venue</label>
         <input type="text" name="name_venue" value="">
       </div>
@@ -111,13 +112,13 @@
       <h4>Additional Information</h4>
       <div class="free_text">
         <textarea class="textinput"  name="additional_info" rows="8" cols="80"></textarea><br>
-        <label for="accept_terms">Accept terms(*):</label>
-        <div>
-          <input type="checkbox" name="accept_terms" required>
-          I have read and accept the terms and conditions (<a href="AGBs.pdf">click to download</a>) <br>
-          <input class="button" type="submit" name="additional_info">
-        </div>
       </div>
-  </form>
+      <label id="terms_label" for="accept_terms">Accept terms(*):</label>
+      <div class="checkbox" id="terms">
+        <input type="checkbox" name="accept_terms" required>
+        <label for="accept_terms">I have read and accept the terms and conditions (<a href="AGBs.pdf">download</a>)</label>
+      </div>
+        <input class="button" type="submit" name="additional_info">
+    </form>
   </body>
 </html>

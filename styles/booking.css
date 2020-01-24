@@ -31,26 +31,27 @@ h1, h4 {
   grid-column: 1 / 13;
   margin-top: 1rem;
   margin-bottom: .5rem;
+  text-shadow: 0 0;
 }
 
 label, input {
   border-radius: .4rem;
-  min-width: 100%;
+  width: 100%;
 }
 
 .item {
   margin-bottom: 1rem;
 }
 
-.item-left {
+.item_left {
   grid-column: 1 / 7;
 }
 
-.item-right {
+.item_right {
   grid-column: 7 / 13;
 }
 
-.item-whole {
+.item_whole {
   grid-column: 1 / 13;
   width: 40rem;
   min-width: 100%;
@@ -69,7 +70,7 @@ label, input {
 }
 
 .item_city{
-  grid-column: 5 / 13;
+  grid-column: 4 / 13;
 }
 
 .item_date_left{
@@ -107,10 +108,6 @@ input[type=checkbox] {
   margin: auto;
 }
 
-textarea {
-  width: auto;
-}
-
 .checkbox {
   margin-bottom: 1rem;
 }
@@ -124,8 +121,12 @@ textarea {
   float: right;
   padding: .5rem 0;
   margin-top: .5rem;
+  grid-column: 9/13;
 }
 
+#terms {
+  grid-column: 1/13;
+}
 #checkbox_1{
   grid-column: 1 / 5;
 }
@@ -136,26 +137,26 @@ textarea {
   grid-column: 9 / 13;
 }
 
-@media (max-width: 800px) {
-  form {
-    display: block;
-    width: 40rem;
-    margin: 0 auto;
-    border: 1px solid var(--darker-grey);
-    background-color: var(--pink);
-    border-radius: .8rem;
-    padding: 0 1rem;
+@media (max-width: 800px), (min-width: 400){
+  body, html {
+    align: center;
+    max-width: 800px;
   }
 
-  label {
-    width: 30%;
-    min-width: 30%;
+  form {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border: 1px solid var(--darker-grey);
+    background-color: var(--purple);
+    border-radius: .8rem;
+    /* padding: 0 1rem 3rem 1rem; */
+    align: auto;
   }
+
   input {
     width: 60%;
-  }
-  h4{}
-    grid-column: 1 / 2;
+    float: right;
   }
 
   .item {
