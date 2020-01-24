@@ -1,0 +1,160 @@
+:root {
+    --light-grey: #B8B8B8;
+    --dark-grey: #606060;
+    --darker-grey: #404040;
+    --pink: #FF0099;
+    --purple: #9900FF;
+    --white: #FFFFFF;
+}
+
+body, html {
+  text-align: left;
+  color: var(--purple);
+  background-color: var(--light-grey);
+  font-family: "Gayathri", sans-serif;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+p {
+  background-color: var(--darker-grey);
+  color: var(--white);
+  height: 100px;
+  text-align: left;
+  padding-left: 50px;
+  padding-top: 10px;
+}
+
+table {
+  float: center;
+  border-collapse: collapse;
+}
+
+td {
+  align: center;
+  text-align: center;
+  padding-bottom: 0px;
+}
+
+td:first-child {
+  padding-right: 5px;
+}
+
+td:second-child {
+  padding-left: 5px;
+}
+
+tr {
+  height: 600px;
+}
+
+.card {
+  border-left: 10px solid var(--darker-grey);
+  border-right: 10px solid var(--darker-grey);
+  background-color: var(--darker-grey);
+}
+
+.footer {
+  border-radius: 25px;
+  color: #FFF;
+  background-color: var(--darker-grey);
+  text-align: center;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  color: #FFF;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.fa:hover {
+  background-color: white;
+    color: black;
+}
+
+.fa-twitter:hover {
+    color: blue;
+}
+
+.fa-lastfm:hover {
+  color: red;
+}
+
+.subheader {
+  text-align: left;
+  color: var(--pink);
+  background-color: var(--darker-grey);
+  font-variant: small-caps;  /* Kapitälchen */
+  font-family: "Tradewinds", Times, serif;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 0px;
+}
+
+
+.column {
+  float: left;
+  align-items: center;
+  width: 40%;
+  padding: 5px 20px 5px 20px;
+  margin-bottom: 50px;
+}
+
+.column-3 {
+  float: left;
+  align-items: center;
+  width: 30%;
+}
+
+.row {
+  align-items: center;
+}
+
+.thumbnail_wrapper {
+  border-radius: 50%;
+  width: 750px;
+  height: 675px;
+  background-color: var(--light-grey);
+  padding-top: 125px;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* FONTS */
+@font-face {
+ font-family: Tradewinds;
+ src: url(https://fonts.gstatic.com/s/tradewinds/v8/AYCPpXPpYNIIT7h8-QenM0Jt5vM.woff2);
+}
+
+@font-face {
+ font-family: Gayathri;
+ src: url(https://fonts.googleapis.com/css?family=Gayathri&display=swap);
+}
+
+@font-face {
+ font-family: font-awsome;
+ src: url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+}
