@@ -167,3 +167,39 @@ input[type=checkbox] {
  font-family: Gayathri;
  src: url(https://fonts.googleapis.com/css?family=Gayathri&display=swap);
 }
+
+.fa-envelope-o:hover, .fa-home:hover {
+  background-color: black;
+  color: white;
+}
+
+.fa-twitter:hover {
+  background-color: blue;
+  color: white;
+}
+
+.fa-lastfm:hover {
+  background-color: red;
+  color: white;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 1rem;
+  width: 1rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: 0.5s;
+  color: black;
+  background-color: white;
+}
+
+.footer {
+  border-radius: 25px;
+  color: var(--white);
+  background-color: var(--light-grey);
+  padding: 5px;
+  width: 30%;
+  margin: auto;
+}

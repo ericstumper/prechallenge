@@ -1,0 +1,74 @@
+img {
+  margin-right: 5rem;
+  margin-bottom: 1rem;
+}
+
+td, th, table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 5px;
+}
+
+q{
+  margin-left: 50px;
+}
+hr {
+  min-width: 100%;
+}
+
+h1 {
+  text-shadow: 0 0;
+}
+
+html, body{
+  background-color: white;
+}
+
+ul{
+  list-style-type: lower-alpha;
+}
+
+.address_list{
+  list-style-type: none;
+}
+
+.fa-envelope-o:hover, .fa-home:hover {
+  background-color: var(--light-grey);
+  color: white;
+}
+
+.fa-twitter:hover {
+  background-color: blue;
+  color: white;
+}
+
+.fa-lastfm:hover {
+  background-color: red;
+  color: white;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 1rem;
+  width: 1rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: 0.5s;
+  color: black;
+  background-color: white;
+}
+
+.footer {
+  border-radius: 25px;
+  color: var(--white);
+  background-color: var(--black);
+  text-align: center;
+  padding: 5px;
+  width: 30%;
+  float: middle;
+  margin: auto;
+}
